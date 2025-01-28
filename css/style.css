@@ -1,0 +1,406 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+img{
+	max-width:100%;
+}
+
+h2{
+	font-size: 28px; /* Slightly increased for better hierarchy */
+	font-weight: bold; /* Ensures titles are bold */
+	display: inline-block;
+	margin-top:9px;
+	position: relative;
+	z-index: 9;
+	text-decoration: underline;	
+}
+
+h3, p {
+	font-size: 20px; /* Slightly reduced for subtexts */
+	font-weight: normal; /* Ensures subtexts are not bold */
+	margin-top: 6px;
+}
+
+.container{
+	width:850px;
+	max-width:100%;
+	margin:0px auto;
+	padding:20px;
+}
+
+.single-box{
+	background-color:#1F2129;
+	margin-bottom:20px; /* Increased margin for better spacing */
+	text-align:center;
+	overflow:hidden;
+	padding:20px 30px; /* Increased padding for better spacing */
+	border-radius:15px;
+}
+
+.three-col{
+	display:grid;	
+	grid-template-columns: repeat(3, 1fr);
+	gap:22px
+}
+
+.two-col{
+	display:grid;	
+	grid-template-columns: repeat(2, 1fr);
+	gap:22px
+}
+
+.tt-col{
+	display:grid;	
+	grid-template-columns: repeat(2, 1fr);
+	gap:22px
+}
+
+.tt-col ul{
+	padding: 14px;
+	text-align:left
+}
+
+.full{
+	width:100%;
+}
+
+.two-col ul{
+	padding-left: 59px;
+    text-align: left;
+}
+
+.two-col ul li, .innerboxtwo ul li{
+	margin-bottom:8px;
+}
+
+a{
+	color:white;
+	text-decoration:none;
+}
+
+a:hover {
+    color: #FFD700; /* Optional: Add hover effect for links */
+}
+
+.mb0{
+	margin-bottom:0px;
+}
+
+.cimg{
+	border-radius: 40px;
+    width: 97%;
+}
+
+.innerbox{
+	box-shadow: 5px 1px 13px -4px black;
+    width: 500px;
+    margin: 0px auto;
+	background-color: #434343;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+.innerbox h3, .innerboxtwo h3{
+	margin-top:0px;
+}
+
+.innerbox ul{
+	width: 229px;
+    margin: 0px auto;
+	max-width:100%;
+}
+
+.innerboxtwo{
+	box-shadow: 5px 1px 13px -4px black;
+    width: 688px;
+    margin: 0px auto;
+	background-color: #434343;
+	border-radius: 15px;
+	padding: 15px;
+}
+
+h3{
+	/* Removed global styles to prevent overriding specific styles */
+}
+
+ul{
+	padding:0px;
+	margin:0px;
+}
+
+.dflex{
+    display: flex;
+    justify-content: space-around;
+    gap: 17px;
+}
+
+ol{
+	text-align:left;
+}
+
+ol li{
+	margin-bottom:22px
+}
+
+.addon{
+	display:grid;	
+	grid-template-columns: repeat(2, 1fr);
+	gap:22px;
+	align-items: center;
+}
+
+.addon ul{
+	list-style:none;
+}
+
+.addon ul li{
+	display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+	flex-direction: column; /* Changed to column for better alignment */
+	justify-content: center;
+}
+
+.addon ul li span{
+	width: 6px;
+    height: 6px;
+    background-color: white;
+    display: inline-flex;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+ul li span{
+	width: 6px;
+    height: 6px;
+    background-color: white;
+    display: inline-flex;
+    border-radius: 13px;
+    justify-content: center;
+}
+
+.buildinggif{
+	width: 90%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.white-btn{
+	display: block;
+    background-color: white;
+    width: 94%;
+    margin: 0px auto;
+    border-radius: 55px;
+    color: black;
+    padding: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 16px;
+	text-shadow: 2px 2px #dcdcdc;
+}
+
+.timg{
+	border-radius: 20px;
+    margin-bottom: 28px
+}
+
+.addon img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+.mtsm{
+	margin-top:10px;
+}
+
+.list-top li{
+	margin-top:12px
+}
+
+iframe{
+	border: 3px solid white;
+}
+
+.img-comp-container {
+	position: relative;
+    height: 260px;
+    border: 3px solid white;
+    overflow: hidden;
+    margin-top: 12px;
+}
+
+.img-comp-img {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow:hidden;
+	width:100%;
+}
+
+.img-comp-img img {
+	display:block;
+	vertical-align:middle;
+	height: 260px;
+}
+
+.img-comp-slider {
+	position: absolute;
+	z-index:9;
+	cursor: ew-resize;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-image: url(../img/icons.svg);
+    background-size: 38px 17px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.img-comp-overlay img{
+	max-width:561px;
+	height: 260px;
+}
+
+.img-comp-overlay{
+	border-right: 3px solid white
+}
+
+.cborder{
+	border: 4px solid white;
+    border-radius: 34px;
+}
+
+iframe.juxtapose {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.single-box iframe {
+    margin: 0;
+    display: block;
+}
+
+/* New CSS to align text to the center in FEATURE TEXT */
+.feature-text {
+    text-align: center;
+}
+
+/* Updated CSS for Resizable Avoidance and Follow Curves Image Blocks */
+
+/* Fixed size for Avoidance Feature */
+.addon.avoidance .icol img {
+    width: 40px; /* Set fixed width */
+    height: auto; /* Set fixed height */
+}
+
+/* Fixed size for Follow Curves Feature */
+.addon.follow-curve .icol img {
+    width: 40px; /* Set fixed width */
+    height: auto; /* Set fixed height */
+}
+
+/* Removed responsive adjustments for arrow images */
+
+/* New CSS for Easy-Animations Text Color */
+.easy-animations {
+    color: #00d9ff; /* Choose your desired color */
+    display: block;
+    margin: 10px 0; /* Adjust spacing as needed */
+}
+
+/* New CSS for Notification Box */
+.notification-box {
+    background-color: #ffffff; /* Background color of the box */
+    color: #000000; /* Text color */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 15px 0; /* Spacing above and below the box */
+    font-size: 16px;
+    position: relative;
+}
+
+.notification-box a.highlight-link {
+    color: #1E90FF; /* Highlight color for the link */
+    text-decoration: underline;
+}
+
+.notification-box a.highlight-link:hover {
+    color: #63B3ED; /* Optional: Change color on hover */
+}
+
+/* New CSS for SUMMARY Section */
+.summary-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.summary-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    flex: 1; /* Ensures each list takes equal space */
+}
+
+.summary-list:not(:last-child) {
+    margin-right: 20px; /* Adds space between columns */
+}
+
+.summary-list li {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Removed the media query to prevent layout changes on narrow widths */
+
+/* New CSS for Rounded Box */
+.rounded-box {
+    background-color: #ffffff; /* Background color of the box */
+    color: #000000; /* Text color */
+    padding: 5px 5px;
+    border-radius: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-row {
+    display: flex; /* Arrange images side by side */
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between the images */
+    margin: 20px 0; /* Optional: Space above and below the row */
+}
+
+.image-row img {
+    width: auto; /* Set desired width */
+    height: 430px; /* Set desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: 4px solid #ffffff; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Rounded corners */
+    transition: transform 0.3s; /* Optional: Smooth hover effect */
+}
+
+/* Additional Styling for Step Titles */
+.step-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Ensure all subtexts have consistent styling */
+.subtext {
+    font-size: 18px;
+    color: #dddddd; /* Slightly lighter color for subtexts */
+}
