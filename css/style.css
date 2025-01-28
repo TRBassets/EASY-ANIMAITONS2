@@ -385,7 +385,7 @@ iframe.juxtapose {
 
 .image-row img {
     width: auto; /* Set desired width */
-    height: 430px; /* Set desired height */
+    height: 360px; /* Set desired height */
     object-fit: cover; /* Ensure the image covers the area without distortion */
     border: 4px solid #ffffff; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Rounded corners */
